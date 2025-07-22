@@ -1,14 +1,52 @@
 <!DOCTYPE html>
+<!--
+  @fileoverview
+  This HTML file serves as the entry point for the "Journal" web application.
+  It includes metadata for responsive rendering, links to stylesheets,
+  and loads the main JavaScript module that initializes the page.
+-->
+
 <html lang="en">
   <head>
+    <!--
+      Specifies the character encoding for the document as UTF-8.
+      Ensures that the document correctly handles special characters and symbols.
+    -->
     <meta charset="UTF-8" />
+
+    <!--
+      Ensures the page scales correctly on all devices by setting the viewport.
+      Prevents zooming issues and enables responsive design.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      Sets the title of the browser tab or window.
+    -->
     <title>Journal</title>
+
+    <!--
+      Imports the main JavaScript module that contains the core functionality
+      for rendering content, handling user input, and managing localStorage.
+    -->
     <script type="module" src="./src/journal.js"></script>
+
+    <!--
+      Links to the external CSS file that provides layout and design styles.
+    -->
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
+    <!--
+      The <header> will be dynamically populated by JavaScript (e.g. navigation bar).
+    -->
     <header></header>
+
+    <!--
+      The <main> section acts as the primary container for journal entries
+      or any other dynamic content injected by the JavaScript module.
+    -->
     <main></main>
   </body>
 </html>
