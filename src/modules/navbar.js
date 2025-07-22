@@ -1,6 +1,8 @@
+import logoPath from '../../logo.png';
+
 export function renderNavbar() {
   const currentPath = window.location.pathname;
-  //console.log("Current Path:", window.location.pathname);
+
   const nav = document.createElement('nav');
   nav.className = 'bg-gray-900 text-white px-6 py-4 shadow';
 
@@ -11,7 +13,7 @@ export function renderNavbar() {
   logo.className = 'flex items-center gap-2';
 
   const logoImg = document.createElement('img');
-  logoImg.src = 'logo.png';
+  logoImg.src = logoPath;
   logoImg.alt = 'Movie Diary Logo';
   logoImg.className = 'h-14 w-14';
 
